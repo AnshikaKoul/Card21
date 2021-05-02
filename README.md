@@ -32,6 +32,8 @@ javac -d out/production/Card21/ src/main/*.java
 ```
 - To run from command line :
 
+change the director to : ```out/production/Card21```
+
 To read a file containing a deck of cards, taking the reference to the file as a command line argument, as a starting point.
 
 ```
