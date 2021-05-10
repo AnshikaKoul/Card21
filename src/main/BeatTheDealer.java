@@ -1,7 +1,5 @@
 package main;
 
-import java.io.IOException;
-
 public class BeatTheDealer {
 
     public static void main(String[] args) {
@@ -16,8 +14,8 @@ public class BeatTheDealer {
         if (args.length == 1) {
             try {
                 deckOfCards  = new DeckOfCards(args[0]);
-            } catch (IOException e) {
-                System.out.println("File not found, Please enter a.txt - valid filename ");
+            } catch (Exception e) {
+                System.out.println("It seems you have enter invalid input, Please enter valid filename - a.txt with correct values for cards");
                 return;
             }
             winner = playGame.beatTheDealerAt21(sam, dealer, deckOfCards, false);
